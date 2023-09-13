@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - printing the first 96 fibonacci numbers
+ *
+ * Return: Always 0
+ */
 
 int main(void)
 {
