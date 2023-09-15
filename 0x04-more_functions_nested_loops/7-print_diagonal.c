@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_diagonal-prints diagonal backward slash
+ * print_diagonal - prints diagonal backward slash
  * @n: number of times '\' needs to be printed
  * Return: void
  */
@@ -16,7 +16,7 @@ void print_diagonal(int n)
 
 		for (a = 0; a < n; a++)
 		{
-			for (b = 0; b <= a; a++)
+			for (b = 0; b <= a; b++)
 				_putchar(' ');
 			_putchar('\\');
 			_putchar('\n');
