@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_diagonal - prints diagonal backward slash
- * @n: number of times '\' needs to be printed
+ * print_diagonal - prints diagonally with '\'
+ * @n: number of times '\' should be printed
  * Return: void
  */
 
