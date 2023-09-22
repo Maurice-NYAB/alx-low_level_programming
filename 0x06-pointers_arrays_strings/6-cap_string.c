@@ -12,24 +12,24 @@ char *cap_string(char *strng)
 
 	while (strng[ab])
 	{
-		while (!(strng[ab] >= 'a' && strng[ab] <= 'z'))
-			ab++;
-				if (strng[ab - 1] == ' ' ||
-				strng[ab - 1] == '\t' ||
-				strng[ab - 1] == '\n' ||
-				strng[ab - 1] == ',' ||
-				strng[ab - 1] == ';' ||
-				strng[ab - 1] == '.' ||
-				strng[ab - 1] == '!' ||
-				strng[ab - 1] == '?' ||
-				strng[ab - 1] == '"' ||
-				strng[ab - 1] == '(' ||
-				strng[ab - 1] == ')' ||
-				strng[ab - 1] == '{' ||
-				strng[ab - 1] == '}' ||
-				ab == 0)
-			strng[ab] -= 32;
-			ab++;
+	while (!(strng[ab] >= 'a' && strng[ab] <= 'z'))
+	ab++;
+	if (strng[ab - 1] == ' ' ||
+	strng[ab - 1] == '\t' ||
+	strng[ab - 1] == '\n' ||
+	strng[ab - 1] == ',' ||
+	strng[ab - 1] == ';' ||
+	strng[ab - 1] == '.' ||
+	strng[ab - 1] == '!' ||
+	strng[ab - 1] == '?' ||
+	strng[ab - 1] == '"' ||
+	strng[ab - 1] == '(' ||
+	strng[ab - 1] == ')' ||
+	strng[ab - 1] == '{' ||
+	strng[ab - 1] == '}' ||
+	ab == 0)
+	strng[ab] -= 32;
+	ab++;
 	}
 	return (strng);
 }
